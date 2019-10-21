@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/myToolbar"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_below="@id/myToolbar"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+
+        android:fillViewport="true"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="80dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <EditText
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_marginTop="52dp"
+                android:textColor="#000"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:drawablePadding="16dp"
+                android:clickable="false"
+                android:focusable="false"
+
+                android:drawableLeft="@drawable/ic_local_offer_24dp"
+                android:textColorHint="@color/greyOne"/>
+
+            <EditText
+                android:id="@+id/depart"
+                android:layout_width="match_parent"
+                android:maxLines="2"
+                android:textColor="#000"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:drawablePadding="16dp"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="Départ"
+                android:drawableLeft="@drawable/ic_add_location_black_24dp"
+                android:textColorHint="@color/greyOne"/>
+
+
+
+            <EditText
+                android:id="@+id/destination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:layout_margin="8dp"
+                android:textColor="#000"
+                android:hint="Destination"
+                android:drawablePadding="16dp"
+                android:clickable="true"
+                android:focusable="false"
+                android:drawableLeft="@drawable/ic_flag_black_24dp"
+                android:textColorHint="@color/greyOne"/>
+
+
+
+            <EditText
+                android:id="@+id/pickaDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:textColor="#000"
+                android:drawableLeft="@drawable/ic_date_range_24dp"
+                android:hint="Pick a Date"
+                android:clickable="true"
+                android:focusable="false"
+                android:drawablePadding="16dp"
+                android:textColorHint="@color/greyOne"/>
+
+
+
+            <EditText
+                android:id="@+id/setTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:textColor="#000"
+                android:drawableLeft="@drawable/ic_access_time_24dp"
+                android:hint="Set a Time"
+                android:clickable="true"
+                android:focusable="false"
+                android:drawablePadding="16dp"
+                android:textColorHint="@color/greyOne"/>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="52dp"
+                android:paddingTop="12dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="24dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/annulerBtn2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_login"
+                    android:padding="4dp"
+
+                    android:layout_marginTop="4dp"
+                    android:text="Annuler"
+                    android:textColor="@color/colorPrimary" />
+
+                <Button
+                    android:id="@+id/rechercheBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_confirmbtn"
+                    android:padding="4dp"
+
+                    android:text="Rechercher"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

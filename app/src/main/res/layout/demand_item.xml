@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:layout_marginBottom="2dp">
+
+
+    <View
+        android:id="@+id/lastview"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/content2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"></View>
+
+
+    <RelativeLayout
+
+        android:id="@+id/content1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/profile_image"
+            android:orientation="vertical"
+            android:layout_marginLeft="8dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="From : "
+                android:textSize="15sp"
+                android:drawableLeft="@drawable/ic_add_location_black_24dp"
+                android:drawablePadding="2dp"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To : "
+                android:textSize="15sp"
+                android:drawableLeft="@drawable/ic_flag_black_24dp"
+                android:drawablePadding="2dp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/content2"
+        android:layout_below="@id/content1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="4dp">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Date"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:drawableLeft="@drawable/ic_date_range_24dp"
+            android:drawablePadding="4dp"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Time"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:drawableLeft="@drawable/ic_access_time_24dp"
+            android:drawablePadding="4dp"/>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="40 DZ"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:drawableLeft="@drawable/ic_monetization_on_24dp"
+            android:drawablePadding="4dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

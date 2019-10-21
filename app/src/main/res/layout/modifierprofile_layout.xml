@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<android.support.v7.widget.Toolbar android:id="@+id/myToolbar"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="wrap_content"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+</android.support.v7.widget.Toolbar>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <android.support.design.widget.TextInputLayout
+        android:theme="@style/TextInputLayoutAppearance"
+        android:id="@+id/username_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+        <EditText
+            android:id="@+id/etUsername"
+            android:textColor="#212121"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="Nom*" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:theme="@style/TextInputLayoutAppearance"
+        android:id="@+id/email_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+        <EditText
+            android:id="@+id/email"
+            android:textColor="#212121"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:enabled="false"
+            android:ems="10"
+            android:hint="Adresse email*" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:textColor="#545454"
+        android:text="Cet email sera votre identifiant de connexion"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:theme="@style/TextInputLayoutAppearance"
+        android:id="@+id/tel_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+        <EditText
+            android:id="@+id/telephone"
+            android:textColor="#212121"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:inputType="phone"
+            android:ems="10"
+            android:hint="Téléphone*" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:textColor="#545454"
+        android:text="Votre numéro ne sera transmis q'à vos court-voitureurs"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/naissance_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+        <EditText
+            android:id="@+id/naissance"
+            android:layout_width="match_parent"
+            android:textColor="#212121"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="false"
+            android:ems="10"
+            android:hint="Date de naissance*" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/sexe_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+        <EditText
+            android:id="@+id/sexe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/ic_arrow_drop_down_24dp"
+            android:textColor="#212121"
+            android:clickable="true"
+            android:focusable="false"
+            android:ems="10"
+            android:hint="Je suis" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/nationalité_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+        <EditText
+            android:id="@+id/nationalité"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/ic_arrow_drop_down_24dp"
+            android:textColor="#212121"
+            android:ems="10"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="Nationalité" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:theme="@style/TextInputLayoutAppearance"
+        android:id="@+id/voiture_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+        <EditText
+            android:id="@+id/voiture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="#212121"
+            android:ems="10"
+            android:hint="Ma voiture" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/ambiance_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+        <EditText
+            android:id="@+id/ambiance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="#212121"
+            android:drawableRight="@drawable/ic_arrow_drop_down_24dp"
+            android:ems="10"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="Ambiance dans la voiture" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/cigarette_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+        <EditText
+            android:id="@+id/cigarette"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="#212121"
+            android:drawableRight="@drawable/ic_arrow_drop_down_24dp"
+            android:ems="10"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="Cigarette" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/discussion_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+        <EditText
+            android:id="@+id/discussion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#212121"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/ic_arrow_drop_down_24dp"
+            android:ems="10"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="Les discussions en voiture" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:theme="@style/TextInputLayoutAppearance"
+        android:id="@+id/apropos_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+        <EditText
+            android:id="@+id/apropos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#212121"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="A propos de moi" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/enregistrer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#fff"
+        android:clickable="true"
+        android:background="@drawable/background_confirmbtn"
+        android:text="Enregistrer"/>
+</LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.app_trying">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_maybe2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_maybe2_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:label="@string/app_name" android:name="SignUp"/>
+
+        <activity android:label="@string/app_name" android:name="Profile"
+            android:parentActivityName=".Home"/>
+
+        <activity android:label="Offers" android:name="Home"/>
+
+        <activity android:label="Messages" android:name=".Messages"/>
+
+        <activity android:label="Demands" android:name=".Demands"/>
+
+        <activity android:label="Demands" android:name=".MyOffers"/>
+
+        <activity android:label="Demands" android:name=".MyDemands"/>
+
+        <activity android:label="Ajouter Offre" android:name=".addOffer"
+            android:parentActivityName=".Home"/>
+
+        <activity android:label="Modifier Profile" android:name=".ModifierProfile"
+            android:parentActivityName=".Profile"/>
+
+        <activity android:label="Chats" android:name=".Chat"
+            android:parentActivityName=".Messages"/>
+
+        <activity android:label="Offre" android:name=".OfferDetails"
+            android:parentActivityName=".Home"/>
+
+        <activity android:label="Offre" android:name=".OfferModification"
+            android:parentActivityName=".Home"/>
+
+        <activity android:label="Offre" android:name=".addDemands"
+            android:parentActivityName=".Demands"/>
+
+        <activity android:label="Offre" android:name=".DemandsDetail"
+            android:parentActivityName=".Demands"/>
+
+        <activity android:label="Offre" android:name=".DemandsModification"
+            android:parentActivityName=".DemandsDetail"/>
+
+        <activity android:label="Notifications" android:name=".Notifications"
+            android:parentActivityName=".Home"/>
+
+        <activity android:label="HAYA M3AYA" android:name=".OtherProfile"
+            android:parentActivityName=".Home"/>
+
+        <activity android:label="HAYA M3AYA" android:name=".Historique"
+            android:parentActivityName=".Profile"/>
+
+        <activity android:label="Offre" android:name=".HistoriqueDetails"
+            android:parentActivityName=".Historique"/>
+
+        <activity android:label="Recherche" android:name=".Recherche"
+            android:parentActivityName=".Home"/>
+
+        <activity android:name=".RechercheResult" android:parentActivityName=".Recherche"/>
+
+        <activity android:name=".RechercheDemands" android:parentActivityName=".Demands"/>
+
+        <activity android:name=".RechercheResultDemands" android:parentActivityName=".RechercheDemands"/>
+
+        <activity android:name=".EvaluationDetails" android:parentActivityName=".OtherProfile"/>
+
+        <activity android:name=".Signaler"/>
+
+
+
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

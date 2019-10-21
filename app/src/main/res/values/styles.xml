@@ -1,0 +1,96 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#F13A59</item>
+        <item name="colorPrimaryDark">#D32D4A</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:timePickerDialogTheme">@style/Theme.MyTheme.TimePicker</item>
+
+
+
+        <!-- Assign dialog style here. -->
+        <item name="alertDialogTheme">@style/MyAlertDialogStyle</item>
+        <item name="alertDialogStyle">@style/MyAlertDialogStyle</item>
+
+        <!-- Assign custom text styles for title, description, comment -->
+
+        <!-- <item name="appRatingDialogTitleStyle">@style/MyDialogTitleStyle</item>
+         <item name="appRatingDialogDescriptionStyle">@style/MyDialogDescriptionStyle</item>
+         <item name="appRatingDialogNoteDescriptionStyle">@style/MyDialogNoteDescriptionStyle</item>
+         <item name="appRatingDialogCommentStyle">@style/MyDialogCommentStyle</item> -->
+     </style>
+
+     <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+     </style>
+
+     <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+         <item name="android:background">#fff</item>
+     </style>
+
+     <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+     <item name="android:textColor">#fff</item>
+     <item name="android:background">#e57373</item>
+     <item name="colorAccent">#fff</item>
+     </style>
+
+     <style name="CustomDatePickerDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+         <item name="android:dialogTheme">@style/MyDialogTheme1</item>
+         <item name="android:datePickerStyle">@style/MyDatePicker</item>
+         <item name="colorControlNormal">@color/colorPrimary</item>
+         <item name="colorAccent">@color/colorPrimary</item>
+     </style>
+
+     <style name="MyDialogTheme1" parent="Theme.AppCompat.Light.Dialog">
+         <item name="android:datePickerStyle">@style/MyDatePicker</item>
+     </style>
+
+     <style name="MyDatePicker" parent="@android:style/Widget.Material.DatePicker">
+         <item name="android:datePickerMode">spinner</item>
+     </style>
+
+     <style name="Theme.MyTheme.TimePicker" parent="@style/ThemeOverlay.AppCompat.Dialog.Alert">
+         <item name="showTitle">false</item>
+         <item name="android:timePickerMode">clock</item>
+         <item name="android:colorAccent">@color/colorPrimary</item>
+         <item name="android:colorControlActivated">@color/colorPrimary</item>
+         <item name="android:textColorPrimary">#000</item>
+         <item name="android:textColorSecondary">@color/greyOne</item>
+
+     </style>
+
+     <style name="TextInputLayoutAppearance" parent="Widget.Design.TextInputLayout">
+         <!-- reference our hint & error styles -->
+
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+
+           <!-- Style for Rating dialog -->
+
+    <!-- Dialog -->
+    <style name="MyAlertDialogStyleRating" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">#fff</item>
+        <item name="buttonBarPositiveButtonStyle">@style/MyAlertDialogButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/MyAlertDialogButtonStyle</item>
+        <item name="buttonBarNeutralButtonStyle">@style/MyAlertDialogButtonStyle</item>
+    </style>
+
+    <style name="MyAlertDialogButtonStyle" parent="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/colorPrimary</item>
+
+    </style>
+
+    <style name="MyDialogFadeAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+
+
+
+
+
+
+</resources>

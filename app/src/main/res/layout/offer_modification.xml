@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar android:id="@+id/myToolbar"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F0F0F0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/TextInputLayoutAppearance"
+                android:id="@+id/depart_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp">
+                <EditText
+                    android:id="@+id/modifDepart"
+                    android:textColor="#212121"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:ems="10"
+                    android:hint="Depart*" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/TextInputLayoutAppearance"
+                android:id="@+id/destination_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp">
+                <EditText
+                    android:id="@+id/modifDestination"
+                    android:textColor="#212121"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:ems="10"
+                    android:hint="Destination*" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/TextInputLayoutAppearance"
+                android:id="@+id/date_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp">
+                <EditText
+                    android:id="@+id/modifDate"
+                    android:textColor="#212121"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:ems="10"
+                    android:hint="Pick a date*" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/TextInputLayoutAppearance"
+                android:id="@+id/time_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp">
+                <EditText
+                    android:id="@+id/modifTime"
+                    android:layout_width="match_parent"
+                    android:textColor="#212121"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:ems="10"
+                    android:hint="Set a time*" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/TextInputLayoutAppearance"
+                android:id="@+id/prix_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp">
+                <EditText
+                    android:id="@+id/modifPrix"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#212121"
+                    android:ems="10"
+                    android:hint="Prix en DZA par personne" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                android:paddingBottom="4dp">
+                <TextView
+                    android:id="@+id/places"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#000"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_airline_seat_24dp"
+                    android:text="Places :"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:drawablePadding="16dp"
+                    android:textColorHint="@color/greyOne"/>
+
+                <ImageButton
+                    android:id="@+id/modifmoinsBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_remove_circle_red24dp"
+                    android:background="#F0F0F0"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="40dp"/>
+
+                <TextView
+                    android:id="@+id/modifplacestext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="18dp"
+                    android:text="0"
+                    android:textSize="20sp"
+                    android:textColor="#000"/>
+
+                <ImageButton
+                    android:id="@+id/modifplusBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_add_circle_black_24dp"
+                    android:background="#F0F0F0"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"/>
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/TextInputLayoutAppearance"
+                android:id="@+id/comment_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp">
+                <EditText
+                    android:id="@+id/modifComment"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:textCursorDrawable="@null"
+                    android:textColor="#212121"
+                    android:layout_margin="8dp"
+                    android:hint="Laissez un Commentaire ..."
+                    android:gravity="top"
+                    android:inputType="text|textMultiLine" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/enregistrer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#fff"
+                android:clickable="true"
+                android:background="@drawable/background_confirmbtn"
+                android:text="Enregistrer"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

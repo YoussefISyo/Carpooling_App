@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F0F0F0">
+
+    <TextView
+        android:id="@+id/textnotif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginLeft="6dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:text="Chach Marouane veulent covoiturer avec vous pour le trip de Ali mendjeli à El Khroub" />
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_below="@id/textnotif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/accepter"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_confirmbtn"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:text="Accepter"
+            android:textColor="#fff"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/refuser"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/background_login"
+            android:text="Refuser" />
+
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/lastview"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/buttons"
+        android:layout_width="match_parent"
+        android:layout_marginRight="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"></View>
+
+</RelativeLayout>

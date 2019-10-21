@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageEval"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="1dp"/>
+
+
+    <TextView
+        android:id="@+id/nameEval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Youssef Chouai"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_toRightOf="@id/imageEval"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000"/>
+
+    <RatingBar
+        android:id="@+id/ratingBarmy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Base.Widget.AppCompat.RatingBar.Small"
+        android:stepSize="0.5"
+        android:progressTint="@color/colorPrimary"
+        android:isIndicator="true"
+        android:numStars="05"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="4dp"
+        android:layout_marginRight="4dp"
+        />
+
+    <TextView
+        android:id="@+id/commentEval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageEval"
+        android:layout_below="@id/nameEval"
+        android:hint="My Comment heeere"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="6dp"/>
+
+    <TextView
+        android:id="@+id/dateEval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="15/12/2018"
+        android:textColor="#000"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

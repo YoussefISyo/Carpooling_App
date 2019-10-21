@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "933526608890",
+    "firebase_url": "https://haya-m3aya.firebaseio.com",
+    "project_id": "haya-m3aya",
+    "storage_bucket": "haya-m3aya.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:933526608890:android:7149cec0647f476b",
+        "android_client_info": {
+          "package_name": "com.example.app_trying"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "933526608890-l4eds3uffl135ua1lhj09bbdq3hf16f2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.app_trying",
+            "certificate_hash": "a221bc557302f9788e27939178d8abe0de5ff39a"
+          }
+        },
+        {
+          "client_id": "933526608890-un1b9o99qgel181qgt1mpbfo6lcso1b9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkrj5vSw1ErzRZwjXFcvAjE103mRvpIS0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "933526608890-un1b9o99qgel181qgt1mpbfo6lcso1b9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

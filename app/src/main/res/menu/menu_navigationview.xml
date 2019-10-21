@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/My_Profile"
+        android:title="My Profile"
+        android:icon="@drawable/ic_profile_24dp"></item>
+
+    <item android:id="@+id/Chat"
+        android:title="Messages"
+        android:icon="@drawable/ic_message_24dp"></item>
+
+    <item android:id="@+id/Offers"
+        android:title="Offers"
+        android:icon="@drawable/ic_offer_24dp"></item>
+
+    <item android:id="@+id/demands"
+        android:title="Demands"
+        android:icon="@drawable/ic_demands_24dp"></item>
+
+    <item android:id="@+id/MyOffers"
+        android:title="My Offers"
+        android:icon="@drawable/ic_myoffers_24dp"></item>
+
+    <item android:id="@+id/MyDemands"
+        android:title="My Demands"
+        android:icon="@drawable/ic_directions_car_24dp"></item>
+
+    <item android:id="@+id/Users"
+        android:title="All Users"
+        android:visible="false"
+        android:icon="@drawable/ic_person_grey_24dp"></item>
+</menu>

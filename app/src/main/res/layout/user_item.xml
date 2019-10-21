@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image_msg"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/userNameMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHint="#000"
+        android:textColor="#000"
+        android:hint="Marouane Chelghoum"
+        android:layout_toRightOf="@id/profile_image_msg"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="6dp"
+        android:textStyle="bold"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/idUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHint="#7f7f7f"
+        android:textColor="#7f7f7f"
+        android:hint="2i4RuyPTMrYAKHrdF4WTEpINc2v2"
+        android:layout_toRightOf="@id/profile_image_msg"
+        android:layout_below="@id/userNameMsg"
+        android:layout_marginLeft="12dp"
+        android:textStyle="bold"
+        android:textSize="17sp"/>
+
+    <ImageButton
+        android:id="@+id/mssgUser"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_chat_on_24dp"
+        android:clickable="true"
+        android:layout_toRightOf="@id/userNameMsg"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp" />
+
+    <ImageButton
+        android:id="@+id/deleteUser"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="#fff"
+        android:clickable="true"
+        android:src="@drawable/ic_clear_red_24dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="4dp"/>
+
+
+    <View
+        android:id="@+id/lastview"
+        android:layout_marginTop="14dp"
+        android:layout_below="@id/idUser"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"></View>
+
+</RelativeLayout>

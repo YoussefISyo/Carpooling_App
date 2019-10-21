@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/myToolbar"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    </android.support.v7.widget.Toolbar>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/addofferimage"
+        android:scaleType="centerCrop"/>
+
+
+    <EditText
+            android:id="@+id/depart"
+            android:layout_width="match_parent"
+            android:layout_marginTop="42dp"
+            android:maxLines="2"
+            android:textColor="#000"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="12dp"
+            android:drawablePadding="16dp"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="Départ"
+            android:drawableLeft="@drawable/ic_add_location_black_24dp"
+            android:textColorHint="@color/greyOne"/>
+
+
+
+    <EditText
+            android:id="@+id/destination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:layout_margin="8dp"
+            android:textColor="#000"
+            android:hint="Destination"
+            android:drawablePadding="16dp"
+            android:clickable="true"
+            android:focusable="false"
+            android:drawableLeft="@drawable/ic_flag_black_24dp"
+            android:textColorHint="@color/greyOne"/>
+
+
+
+    <EditText
+            android:id="@+id/pickaDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:textColor="#000"
+            android:drawableLeft="@drawable/ic_date_range_24dp"
+            android:hint="Pick a Date"
+            android:clickable="true"
+            android:focusable="false"
+            android:drawablePadding="16dp"
+            android:textColorHint="@color/greyOne"/>
+
+
+
+    <EditText
+        android:id="@+id/setTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:textColor="#000"
+        android:drawableLeft="@drawable/ic_access_time_24dp"
+        android:hint="Set a Time"
+        android:clickable="true"
+        android:focusable="false"
+        android:drawablePadding="16dp"
+        android:textColorHint="@color/greyOne"/>
+
+    <EditText
+        android:id="@+id/prixtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textColor="#000"
+        android:drawableLeft="@drawable/ic_monetization_on_24dp"
+        android:hint="Prix en DZA / Personne"
+        android:textCursorDrawable="@null"
+        android:inputType="numberSigned"
+        android:drawablePadding="16dp"
+        android:textColorHint="@color/greyOne"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearseats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/places"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_airline_seat_24dp"
+        android:text="Places :"
+        android:clickable="true"
+        android:focusable="false"
+        android:drawablePadding="16dp"
+        android:textColorHint="@color/greyOne"/>
+
+        <ImageButton
+            android:id="@+id/moinsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_remove_circle_red24dp"
+            android:background="#fff"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"/>
+
+        <TextView
+            android:id="@+id/placestext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="18dp"
+            android:text="0"
+            android:textSize="20sp"
+            android:textColor="#000"/>
+
+        <ImageButton
+            android:id="@+id/plusBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_circle_black_24dp"
+            android:background="#fff"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/comment"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:textCursorDrawable="@null"
+            android:layout_margin="8dp"
+            android:hint="Laissez un Commentaire ..."
+            android:gravity="top"
+            android:inputType="text|textMultiLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="24dp">
+
+        <Button
+            android:id="@+id/annulerBtn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/background_login"
+            android:text="Annuler"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/colorPrimary"
+            android:padding="4dp"/>
+
+    <Button
+        android:id="@+id/confirmbtn"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/background_confirmbtn"
+        android:text="Confirmer"
+        android:textColor="#fff"
+        android:padding="4dp"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

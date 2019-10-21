@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:background="@drawable/background_image"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="240dp"
+                android:layout_height="160dp"
+                android:src="@drawable/logo"
+                android:layout_gravity="center_horizontal"
+                android:padding="16dp"
+                android:layout_marginBottom="-10dp"
+                android:layout_marginTop="24dp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Join the Community"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="24dp"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="#cc4141"/>
+
+            <EditText
+                android:id="@+id/nameSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="#fff"
+                android:inputType="text"
+                android:hint="Name"
+                android:textColorHint="#fff"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:padding="8dp"
+                android:maxLines="1"
+                android:layout_marginTop="32dp"
+                android:drawableLeft="@drawable/ic_person_white_24dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="24dp"
+                android:background="#e57373"></View>
+
+            <EditText
+                android:id="@+id/mailSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="#fff"
+                android:inputType="textEmailAddress"
+                android:hint="Email Adress"
+                android:textColorHint="#fff"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:padding="8dp"
+                android:maxLines="1"
+                android:drawableLeft="@drawable/ic_mail_black_24dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="24dp"
+                android:background="#e57373"></View>
+
+            <EditText
+                android:id="@+id/passwordSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="#fff"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:textColorHint="#fff"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:padding="8dp"
+                android:maxLines="1"
+                android:drawableLeft="@drawable/ic_lock_white_24dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="24dp"
+                android:background="#e57373"></View>
+
+            <EditText
+                android:id="@+id/confirmpassSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="#fff"
+                android:inputType="textPassword"
+                android:hint="Confirm Password"
+                android:textColorHint="#fff"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:padding="8dp"
+                android:maxLines="1"
+                android:drawableLeft="@drawable/ic_lock_white_24dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:background="#e57373"></View>
+
+            <TextView
+                android:id="@+id/errortext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wrong Credentials!"
+                android:textColor="#d50000"
+                android:layout_gravity="left"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="invisible"
+                />
+
+            <Button
+                android:id="@+id/btnget_started"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_login"
+                android:text="Get Started"
+                android:textAllCaps="false"
+                android:textColor="#e57373"
+                android:padding="16dp"
+                android:layout_marginTop="16dp"
+                android:clickable="true"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already have an account ?"
+                    android:textColor="#fff"
+                    android:layout_marginRight="8dp"/>
+
+                <TextView
+                    android:id="@+id/intenttologin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:textColor="@color/theme"
+                    android:clickable="true"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

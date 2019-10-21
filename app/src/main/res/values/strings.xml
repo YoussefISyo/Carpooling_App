@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Haya M3aya</string>
+
+    <string name="From">From : </string>
+    <string name="To">To : </string>
+    <string name="Dz"> DZ</string>
+    <string name="Seats"> Seats Available</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+</resources>

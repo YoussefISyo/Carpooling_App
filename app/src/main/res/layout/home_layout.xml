@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/mDrawer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/myToolbar"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@id/myToolbar"
+            android:layout_margin="4dp"
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarHome"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_anchorGravity="center"
+                    android:visibility="invisible"
+                    android:layout_centerInParent="true"
+                    android:indeterminateDrawable="@drawable/progress" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/myFab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="16dp"
+                    android:visibility="gone"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:src="@drawable/ic_add_24dp"
+                    app:fabSize="normal"/>
+        </RelativeLayout>
+</LinearLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/mNavig"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:menu="@menu/menu_navigationview"
+            app:headerLayout="@layout/header_navigationview"
+            android:layout_gravity="start"/>
+
+
+
+
+</android.support.v4.widget.DrawerLayout>
